@@ -1,5 +1,5 @@
 import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js';
-import { OrbitControls } from 'https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls';
+import { OrbitControls } from 'https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js';
 
 
 let camera, scene, renderer, controls, container, canvas;
