@@ -2,8 +2,6 @@ import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js';
 import { OrbitControls } from 'https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls';
 import { GLTFLoader } from 'https://unpkg.com/three@0.127.0/examples/jsm/loaders/GLTFLoader';
 
-gsap.registerPlugin(ScrollTrigger);
-
 let camera, scene, renderer, controls, container, canvas;
 let mesh, mesh2, mesh3;
 let screenHeight, screenWidth;
