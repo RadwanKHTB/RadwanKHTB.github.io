@@ -1,4 +1,10 @@
+import * as THREE from './three';
+import { gsap } from './gsap';
+import { ScrollTrigger } from "./gsap/ScrollTrigger";
+import { OrbitControls } from './three/examples/jsm/controls/OrbitControls';
+import { GLTFLoader } from './three/examples/jsm/loaders/GLTFLoader';
 
+gsap.registerPlugin(ScrollTrigger);
 
 let camera, scene, renderer, controls, container, canvas;
 let mesh, mesh2, mesh3;
