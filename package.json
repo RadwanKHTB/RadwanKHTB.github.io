@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0",
+    "gsap": "^3.11.4",
+    "jquery": "^3.6.3",
+    "three": "^0.148.0"
+  },
+  "main": "main.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://RadwanKHTB.github.io/radwankhtb.github.io",
+  "description": ""
+}

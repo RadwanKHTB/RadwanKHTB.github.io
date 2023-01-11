@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div class="parallaxContainer">
+    <div id="header">
+      <div class="container2">
+        <div class="bar"></div>
+        <nav>
+          <img src="images/r-high-resolution-logo-white-on-transparent-background.png" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#experience">Experience</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div id="section">
+      <img src="images/stars.png" id="stars" />
+      <img src="images/moon.png" id="moon" />
+      <img src="images/mountains_behind.png" id="mountains_behind" />
+
+      <h2 id="Mtext">Radwan Khatib</h2>
+      <img src="images/mountains_front.png" id="mountains_front" />
+    </div>
+    <div class="sec" id="about">
+      <h3 class="Ttext"> <b>About</b></h3>
+      <p class="text">
+        I am a 18 year old student studying at Hanze University of Applied Sciences. I am interested in Software Engineering and Artifical Intelligance. The assignment asked to show ourselves rather than tell and I thought what better than to code my own website with the knowledge that I have aswell as some new things I recently picked up. I have always had a fondness for computers and electronics in general. I started with scratch and eventually worked my up to higher level languages.
+      </p>
+      <p class="text">
+        The reason I am in Marketing Management and not Computer Science is because I would like to be able to run my own company one day and I feel like there are more resources for studying CS alone than there are for any other major. My dad is a business owner so as expected he places a heavy emphasis on the business world, so I took him up on his advice and here I am.
+      </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <script>
+      let stars = document.getElementById("stars");
+      let moon = document.getElementById("moon");
+      let mountains_behind = document.getElementById("mountains_behind");
+      let text = document.getElementById("Mtext");
+      let mountains_front = document.getElementById("mountains_front");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + "px";
+        moon.style.top = value * 1.05 + "px";
+        mountains_behind.style.top = value * 0.5 + "px";
+        mountains_front.style.top = value * 0 + "px";
+        text.style.marginRight = value * 4 + "px";
+        text.style.marginLeft = value * 1.5 + "px";
+      });
+    </script>
+  </div>
+  <div class="container" id="contain">
+    <div class="row h-100" id="story">
+      <div class="bgwrapper col-6 offset-2" id="world">
+        <canvas id="bg"></canvas>
+        <script type="module" src="/main.js"></script>
+      </div>
+
+      <div class="sideAbout col-4 align-self-center">
+        <p class="h3" id="infoHead"><b>Country</b></p>
+        <p id="infoText">
+          Select a marker on the map to see the country
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="experience">
+
+    <div class="container-fluid">
+      <div class="row">
+        <h3 class="Ttext col-4 align-self-start" id="expT"><b>Experience</b></h3>
+      </div>
+      <!--Icons-->
+      <div class="row g-0 justify-content-center">
+        <div class="col p-1">
+          <div class="langCard" id="python">
+          <img class="langIcon" src="images/python.png">
+          </div>
+        </div>
+        <div class="col p-1">
+          <div class="langCard" id="c-sharp">
+          <img class="langIcon" src="images/c-sharp.png">
+        </div>
+        </div>
+        <div class="col p-1">
+          <div class="langCard" id="css">
+          <img class="langIcon" src="images/css-3.png">
+        </div>
+        </div>
+        <div class="col p-1">
+          <div class="langCard" id="html">
+          <img class="langIcon" src="images/html-5.png">
+        </div>
+        </div>
+        <div class="col p-1">
+          <div class="langCard" id="javascript">
+          <img class="langIcon" src="images/java-script.png">
+        </div>
+        </div>
+        <div class="col p-1">
+          <div class="langCard" id="java">
+          <img class="langIcon" src="images/java.png">
+        </div>
+        </div>
+        <div class="col p-1 ">
+          <div class="langCard" id="threejs">
+          <img class="langIcon" src="images/threejs.png">
+          </div>
+          </div>
+        <div class="col p-1">
+          <div class="langCard" id="unity">
+          <img class="langIcon" src="images/unity.png">
+        </div>
+        </div>
+        <div class="col p-1">
+          <div class="langCard" id="scratch">
+          <img class="langIcon" src="images/scratch.png">
+        </div>
+        </div>
+        </div>
+        </div>
+        <!--Explains-->
+        <div class="row">
+          <div class="col offset-2">
+            <p id="langText" class="text"><b>Languages</b></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col offset-2">
+            <p id="smLangText" class="text">Hover over an icon to see relevant information</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script>
+     
+      $("#python").hover(function(){
+        $('#langText').html("<p>Python</p>");
+        $('#smLangText').html("<p>One of the first coding languages I ever learned, I remember me and my friend would sit in math class and rather than solve the boring geometry questions we tried coding a script that would use the formula for us to solve the questions, eventually I moved on from python to other languages. However hopefully I will be revisiting it soon to learn about machine learning.</p>");
+        },
+       function(){
+        });
+      $("#c-sharp").hover(function(){
+        $('#langText').html("<p>C#</p>");
+        $('#smLangText').html("<p>Another one of my first 3 languages. I picked C# up when I was around 12-13 when I was interested in game development. Have not used it in other applications so I've forgotten most of the syntax.</p>");
+        },
+       function(){
+        });
+      $("#css").hover(function(){
+        $('#langText').html("<p>CSS</p>");
+        $('#smLangText').html("<p>I used to love CSS in school it was so easy and fun but now I despise it. I once spent 2 hours attempting to move a item to the right side of the screen, 2 hours. That is all I have to say about this horrible language that made it possible for this webiste to exist.</p>");
+        },
+       function(){
+        });
+      $("#html").hover(function(){
+        $('#langText').html("<p>HTML</p>");
+        $('#smLangText').html("<p>HTML is definetly a language I feel comfortable with because of how long I have had to study it but also due to its simplicity. Well it is simple until a website like this needs 20 wrappers for it to operate properly but otherwise fairly experiencesd with HTML.</p>");
+        },
+       function(){
+        });
+      $("#javascript").hover(function(){
+        $('#langText').html("<p>JavaScript</p>");
+        $('#smLangText').html("<p>Honestly I just love this language, I feel like I still have not hit a peek of experience with JS just because of the amount of libraries and tools this has to offer, I love the flexibility of this language and how it can be used for almost anything. Oddly enough my friend introduced me to this language a year ago by playing a virtual hacking game. Needless to say i've been using JS ever since.</p>");
+        },
+       function(){
+        });
+      $("#java").hover(function(){
+        $('#langText').html("<p>Java</p>");
+        $('#smLangText').html("<p>Java is definetly the language I am most experienced in. I have been using it consistently for about 3-4 years now. It started when I was around 14 and I got into a bit of coding got tired of the game making proccess and thought minecraft mods would be something I want to do. Slowly but surely I worked my way through hours of videos and hundreds of projects to reach this level of comfort when coding with Java.</p>");
+        },
+       function(){
+        });
+      $("#threejs").hover(function(){
+        $('#langText').html("<p>Three JS</p>");
+        $('#smLangText').html("<p>Three.JS is actually a library not a language, it is a JavaScript language that allows the manipulation of 3D objects such as the globe above. I have only recently started learning how to use it so I am fairly unexperienced.</p>");
+        },
+       function(){
+        });
+      $("#unity").hover(function(){
+        $('#langText').html("<p>Blender</p>");
+        $('#smLangText').html("<p>As mentioned under C# I got into game development for a bit which also entailed some 3D modelling, I am still horrible at it till this day. However I am hoping to get started again soon. </p>");
+        },
+       function(){
+        });
+      $("#scratch").hover(function(){
+        $('#langText').html("<p>Scratch</p>");
+        $('#smLangText').html("<p>This is where it all started. As silly as it may seem scratch is actually a programming language. This is the first programming language I ever used and I was hooked, I was first introduced to it in Computing class where we did simple tasks like walking or jumping. One day I went back home and downloaded it on my laptop and started tinkering with all the controls and eventually I managed to make a proper working 3rd person shooter game. No matter how simple scratch might seem it is a beutiful program and language and an amazing educational tool.</p>");
+        },
+       function(){
+        });
+      
+    </script>
+    <div style="height: 800px;">
+
+    </div>
+
+</body>
+
+</html>
