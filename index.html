@@ -67,11 +67,18 @@
         text.style.marginLeft = value * 1.5 + "px";
       });
     </script>
-  </div>
+  </div> 
   <div class="container" id="contain">
     <div class="row h-100" id="story">
       <div class="bgwrapper col-6 offset-2" id="world">
         <canvas id="bg"></canvas>
+         <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://threejs.org/build/three.module.js"
+                }
+            }
+        </script> 
         <script type="module" src="./main.js"></script>
       </div>
 
