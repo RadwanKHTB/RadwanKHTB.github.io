@@ -169,7 +169,7 @@ canvas{
 
 .sideAbout{
   position: relative;
-  background: rgb(5, 46, 120);
+  background-color: rgb(5, 46, 120);
   border-radius: 20px;
   text-overflow: clip;
   z-index: 1000000;
